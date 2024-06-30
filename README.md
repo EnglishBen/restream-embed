@@ -1,0 +1,1 @@
+Simple repo to help with restreaming SSS2 on GTAM's channel without Twitch randomly changing the stream quality.
