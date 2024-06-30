@@ -34,7 +34,13 @@
 
       setInterval(() => {
         console.log("Trying to set quality...");
-        player.setQuality('chunked'); // should be source quality
+        const quality = player.getQuality();
+        if (quality != "chunked") {
+          player.setQuality("chunked"); // should be source quality
+          console.log("Set quality to source.");
+        } else {
+          console.log("Quality is already source, not changing.");
+        }
       }, 5000);
     </script>
   </body>
