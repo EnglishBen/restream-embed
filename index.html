@@ -33,16 +33,9 @@
       player.setVolume(1);
 
       setInterval(() => {
-        let qualities = player.getQualities();
-        for (let index = 0; index < qualities.length; index++) {
-          const quality = qualities[index];
-          if (quality.name.includes('source')) {
-            player.setQuality(quality.group);
-            console.log('Set quality to ', quality.name)
-          }
-          break;
-        }
-      }, 5000)
+        console.log("Trying to set quality...");
+        player.setQuality('chunked'); // should be source quality
+      }, 5000);
     </script>
   </body>
 </html>
